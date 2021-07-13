@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  #display.w3-card-4.modal.w3-animate-top(style=" width:100%; height=100%; overflow: auto; ")
+        .w3-container.w3-blue
+            h2.w3-center Desenvovimento de Aplicações Web 2020 Epoca Especial
+  h4.w3-center Esta página apresenta os dados de um diploma
+
+    br
+    br
+    br
+    w3-row.w3-margin-bottom
+        .w3-col.s3
+            label.w3-text-blue
+                b Data
+        .w3-col.s9.w3-border
+            p=diploma.data
+        .w3-col.s3
+            label.w3-text-blue
+                b Sumario
+        .w3-col.s9.w3-border
+            p=diploma.sumario
+        .w3-col.s3
+            label.w3-text-blue
+                b Link
+        .w3-col.s9.w3-border
+            a(href=`diploma.link`)= diploma.link     
+        .w3-col.s3
+            label.w3-text-blue
+                b Estado
+        .w3-col.s9.w3-border
+            p=diploma.estado
+        .w3-col.s3
+            label.w3-text-blue
+                b Entidades
+        .w3-col.s9.w3-border
+            if diploma.entidades > 0
+                each e in diploma.entidades.id
+                    p=e   
+                          
+        <br>
+        <br>
+
+
+    tr
+        th Codigo
+        th Titulo
+    each r in regulados
+        tr
+            td #{r.codigo}
+            td #{r.titulo}
+        </tr>
+
+  

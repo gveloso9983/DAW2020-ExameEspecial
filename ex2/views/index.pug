@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  #display.w3-card-4.modal.w3-animate-top(style=" width:100%; height=100%; overflow: auto; ")
+      .w3-container.w3-blue
+          h2.w3-center Desenvovimento de Aplicações Web 2020 Epoca Especial
+  h4.w3-center Esta página apresenta a lista de Diplomas
+
+    h2.w3-center Lista de diplomas
+    table#tabela_pedidos.w3-table.w3-bordered
+      tr
+          th Codigo
+          th Data
+          th Tipo 
+          th Numero
+          th Sumario
+      each d in diplomas
+          tr
+            td 
+            a(href='/diplomas/'+d.id)= d.id
+            td #{d.data}
+            td #{d.tipo}
+            td #{d.numero}
+            td #{d.sumario}
+          </tr>
+    br
+    br
+    br
+    

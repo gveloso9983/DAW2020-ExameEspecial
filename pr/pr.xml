@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pr>
+    <meta>
+        <key>GONCALO_MEI_2021_Teste_DAW_ESPECIAL</key>
+        <title>Teste Epoca Especial- DAW</title>
+        <bdate>Julho 2021</bdate>
+        <edate>Julho 2021</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="PG42830">
+            <name>Gonçalo Jorge Vilas Boas Veloso</name>
+            <email>pg42830@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>
+            Para o primeiro exercício foi necessário realizar o import de um ficheiro <i>JSON</i> que servirá como base de dados:
+	Para tratar o dataset removi as [] que estavam presentes no inicio
+            Posto isto, carreguei o <i>JSON</i> para o mongo com o comando <i>mongoimport -d EE -c alunos--jsonArray aval-alunos.json</i> e iniciei o teste.
+        </p>
+        <p>O primeiro exercício consistui criar um servidor <i>nodejs</i> que dê suporte a uma API de dados com base no dataset disponibilizado e tratado anteriormente.</p>
+        <p>Este exercício, apenas constituido por 6 GET's e devolve listas de dados filtrados.</p>
+	<p> A aplicacao pode ser iniciada com npm start e as dependencias instaladas com o npm i</p>
+        <p>Para o segundo exercício em consumir uma API de dados disponível em <link>hhttp://clav-api.dglab.gov.pt/v2/legislacao</link> .</p>
+	<p> A aplicacao pode ser iniciada com npm start e as dependencias instaladas com o npm i</p>
+        <p>Questões relacionadas com o aquecimento do exercício 2:</p>
+        <p> 
+            <b>1: Quantos Diplomas Legislativos estão catalogados?</b> 
+            R: 1645.
+            <b>2: Quantos diplomas do tipo "Despacho" estão catalogados?</b> 
+            R: 48.
+            <b>3: Que processos são regulados pelo diploma "Lei 28/2016"?</b> 
+            R: Os processos com os titulos:
+		"Designação para cargos ou funções de confiança ou de interesse público"
+		e
+		"Designação para cargos de direção, coordenação e controlo"
+            <b>4: Quantos processos (classes de nível 3) estão relacionados com c300.10.001?</b> 
+            R: Existem cerca de 11 processos relacionados com 900.10.505
+        </p>
+    </abstract>
+
+    <deriverables>
+        <link url="https://github.com/gveloso9983/DAW2020-ExameEspecial "</link>
+    </deriverables>
+</pr>
