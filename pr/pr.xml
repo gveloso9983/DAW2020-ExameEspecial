@@ -21,7 +21,7 @@
             Posto isto, carreguei o <i>JSON</i> para o mongo com o comando <i>mongoimport -d EE -c alunos--jsonArray aval-alunos.json</i> e iniciei o teste.
         </p>
         <p>O primeiro exercício consistui criar um servidor <i>nodejs</i> que dê suporte a uma API de dados com base no dataset disponibilizado e tratado anteriormente.</p>
-        <p>Este exercício, apenas constituido por 6 GET's e devolve listas de dados filtrados.</p>
+        <p>Este exercício, apenas constituido por 8 GET's e devolve listas de dados filtrados.</p>
 	<p> A aplicacao pode ser iniciada com npm start e as dependencias instaladas com o npm i</p>
         <p>Para o segundo exercício em consumir uma API de dados disponível em <link>hhttp://clav-api.dglab.gov.pt/v2/legislacao</link> .</p>
 	<p> A aplicacao pode ser iniciada com npm start e as dependencias instaladas com o npm i</p>
